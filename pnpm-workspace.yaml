@@ -1,0 +1,3 @@
+# pnpm build-script approval (vitest -> vite -> esbuild).
+allowBuilds:
+  esbuild: true
