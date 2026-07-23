@@ -35,8 +35,10 @@
   "scripts": {
     "format": "oxfmt .",
     "format:check": "oxfmt --check .",
-    "lint": "oxlint",
-    "lint:css": "stylelint \"*.css\"",
+    "lint": "oxlint && pnpm lint:css",
+    "lint:fix": "oxlint --fix && pnpm lint:css:fix",
+    "lint:css": "stylelint --allow-empty-input \"*.css\"",
+    "lint:css:fix": "stylelint --allow-empty-input --fix \"*.css\"",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
@@ -47,8 +49,8 @@
     "eslint-plugin-no-only-tests": "^3.4.0",
     "eslint-plugin-perfectionist": "^5.10.0",
     "eslint-plugin-unused-imports": "^4.4.1",
-    "oxfmt": "^0.58.0",
-    "oxlint": "^1.73.0",
+    "oxfmt": "^0.60.0",
+    "oxlint": "^1.75.0",
     "stylelint": "^17.14.0",
     "stylelint-config-standard": "^40.0.0",
     "typescript": "^6.0.3",
