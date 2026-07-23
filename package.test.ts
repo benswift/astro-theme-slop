@@ -8,7 +8,7 @@ import { describe, expect, it } from "vitest";
 
 const root = import.meta.dirname;
 const indexSource = readFileSync(join(root, "index.ts"), "utf8");
-const relativeImports = [...indexSource.matchAll(/from "(\.\/[^"]+)"/g)].map((m) => m[1]);
+const relativeImports = Array.from(indexSource.matchAll(/from "(\.\/[^"]+)"/g), (m) => m[1]);
 
 describe("index.ts asset imports", () => {
   it("imports at least one asset", () => {
