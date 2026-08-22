@@ -1,3 +1,8 @@
 # pnpm build-script approval (vitest -> vite -> esbuild).
 allowBuilds:
   esbuild: true
+
+# Keep the transitive nanoid 3.x line above its security floor until its
+# dependants adopt that floor themselves.
+overrides:
+  "nanoid@>=3.0.0 <3.3.18": "^3.3.18"
