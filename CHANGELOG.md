@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.0 (2026-09-22)
+
+- `slopBranding` now carries `legalLinks`: footer cross-links to
+  slop.university and courses.slop.university, so a course site has a route
+  back to the identity it wears. A site that would link to itself overrides
+  them.
+
 ## 0.1.0 (2026-07-12)
 
 Initial release: the Slop University web identity, extracted from the

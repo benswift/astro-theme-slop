@@ -1,6 +1,6 @@
 {
   "name": "astro-theme-slop",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Slop University branding data for astro-theme-university — brand palette CSS, lockup/crest SVG assets, and a slopBranding props object.",
   "keywords": [
     "astro-component",

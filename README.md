@@ -5,8 +5,9 @@ Slop University branding data for
 The theme code (integration, layouts, components, styles, build checks) lives in
 that package; this one carries only what makes a site _Slop University_:
 
-- `slopBranding` — lockup, crest, and favicon, shaped to spread straight into
-  the core theme's site config (or `BaseLayout`)
+- `slopBranding` — lockup, crest, favicon, and the footer cross-links back to
+  the university and the course register, shaped to spread straight into the
+  core theme's site config (or `BaseLayout`)
 - `slop.css` — the brand palette (lockup gold primary, bronze, warm grey) and
   the nav lockup offset; the theme derives every semantic token from these
 - the lockup/crest SVG assets
@@ -51,7 +52,8 @@ export const siteConfig = defineSiteConfig({
 ```
 
 Props placed after the spread win — a site with its own logo can spread the
-branding then override `logo`/`logoDark`.
+branding then override `logo`/`logoDark`. The apex and the course register
+override `legalLinks`, which otherwise has them linking to themselves.
 
 ## Development
 

@@ -31,6 +31,7 @@ export interface SlopBranding {
   logoDark: ImageMetadata;
   logoCompact: ImageMetadata;
   favicon: ImageMetadata;
+  legalLinks: { text: string; href: string }[];
 }
 
 export const slopBranding: SlopBranding = {
@@ -41,4 +42,12 @@ export const slopBranding: SlopBranding = {
   // cream and dark backgrounds, so a single mark serves both themes.
   logoCompact: slopCrest,
   favicon: slopCrest,
+  // Wayfinding home. A course site is a leaf of the identity with no route
+  // back to it, so the brand layer carries the cross-links rather than leaving
+  // each site to remember them. A hub that would link to itself (the apex, the
+  // course register) overrides this.
+  legalLinks: [
+    { text: "Slop University", href: "https://slop.university/" },
+    { text: "Programs and courses", href: "https://courses.slop.university/" },
+  ],
 };
