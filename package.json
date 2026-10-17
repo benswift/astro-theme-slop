@@ -23,13 +23,15 @@
     "index.ts",
     "types-shim.d.ts",
     "slop.css",
-    "assets/"
+    "assets/",
+    "video/"
   ],
   "type": "module",
   "exports": {
     ".": "./index.ts",
     "./slop.css": "./slop.css",
     "./assets/*": "./assets/*",
+    "./video/*": "./video/*",
     "./package.json": "./package.json"
   },
   "scripts": {
@@ -37,8 +39,8 @@
     "format:check": "oxfmt --check .",
     "lint": "oxlint && pnpm lint:css",
     "lint:fix": "oxlint --fix && pnpm lint:css:fix",
-    "lint:css": "stylelint --allow-empty-input \"*.css\"",
-    "lint:css:fix": "stylelint --allow-empty-input --fix \"*.css\"",
+    "lint:css": "stylelint --allow-empty-input \"*.css\" \"video/*.css\"",
+    "lint:css:fix": "stylelint --allow-empty-input --fix \"*.css\" \"video/*.css\"",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },

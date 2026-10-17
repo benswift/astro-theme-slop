@@ -1,0 +1,15 @@
+/* Slop University branding for astromotion's video stage
+   (astromotion/video/stage.css, which lists the tokens): the house two-ink
+   register, ink and lockup gold on warm cream, in astromotion's default face,
+   Public Sans. The cream is the paper of the curated style references
+   (slop-university's references/slop-style/). Link it after stage.css;
+   slop-dark.css is the white-on-ink variant the signage screens show. */
+
+:root {
+  --video-ground: #f8f0dc; /* cream paper */
+  --video-text: #1a1a1a; /* house ink */
+  --video-text-2: rgb(26 26 26 / 70%);
+  --video-accent: #b97d1c; /* lockup gold */
+  --video-accent-2: #8a5c13; /* the deeper bronze, for thin marks and small type on cream */
+  --video-scrim: linear-gradient(to top, rgb(248 240 220 / 88%), rgb(248 240 220 / 12%));
+}

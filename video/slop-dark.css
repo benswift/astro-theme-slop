@@ -1,0 +1,11 @@
+/* The dark Slop University video stage: cream type on the house ink, with
+   lockup gold, for the e-signage screens (the video sibling of a poster's
+   dark render). Link it after stage.css, instead of slop.css. */
+
+:root {
+  --video-ground: #1a1a1a; /* house ink */
+  --video-text: #f8f0dc; /* cream */
+  --video-text-2: rgb(248 240 220 / 72%);
+  --video-accent: #b97d1c; /* lockup gold */
+  --video-accent-2: #d29a3c; /* a lighter gold, for thin marks and small type on ink */
+}

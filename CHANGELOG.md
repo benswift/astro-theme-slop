@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.0 (2026-10-17)
+
+- `video/` brands astromotion's video stage (astromotion 0.35.0 or later):
+  `video/slop.css` sets its `--video-*` tokens in the house register (ink and
+  lockup gold on cream paper), `video/slop-dark.css` the ink variant for the
+  signage screens, and `video/brand.js` exports the lockup logos and the closing
+  lockup's geometry for astromotion's `video/brand.js`.
+
 ## 0.2.0 (2026-09-22)
 
 - `slopBranding` now carries `legalLinks`: footer cross-links to

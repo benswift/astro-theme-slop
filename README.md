@@ -55,6 +55,15 @@ Props placed after the spread win — a site with its own logo can spread the
 branding then override `logo`/`logoDark`. The apex and the course register
 override `legalLinks`, which otherwise has them linking to themselves.
 
+## Video
+
+`video/` brands [astromotion](https://github.com/ANUcybernetics/astromotion)'s
+video stage, as `slop.css` brands the site: `video/slop.css` (ink and lockup
+gold on cream) or `video/slop-dark.css` (cream on ink, for signage) sets the
+stage's `--video-*` tokens, and `video/brand.js` exports the lockup logos and
+the closing lockup's geometry for astromotion's `video/brand.js`. astromotion's
+`video/README.md` has the wiring.
+
 ## Development
 
 ```sh
