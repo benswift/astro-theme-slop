@@ -10,3 +10,9 @@ allowBuilds:
 minimumReleaseAgeExclude:
   - astro
   - "@astrojs/*"
+
+overrides:
+  # eslint and @eslint/config-array (via @e18e/eslint-plugin and
+  # eslint-plugin-unused-imports) cap minimatch at ^10.2 (GHSA-g3hv-75wg-m249,
+  # fixed in 11.0.1). Drop once they allow >=11.0.1.
+  minimatch: ^11.0.1
