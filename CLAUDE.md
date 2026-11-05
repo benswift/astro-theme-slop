@@ -18,7 +18,7 @@ The package ships as source, with no build step.
 
 ## Checks
 
-`pnpm typecheck && pnpm lint && pnpm lint:css && pnpm format:check && pnpm test`
+`pnpm typecheck && pnpm lint && pnpm format:check && pnpm test` (`lint` includes the CSS)
 --- all green before any commit. CI runs the same via mise
 (`.github/workflows/ci.yml`).
 
