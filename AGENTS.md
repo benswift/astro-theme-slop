@@ -18,8 +18,7 @@ The package ships as source, with no build step.
 
 ## Checks
 
-`pnpm typecheck && pnpm lint && pnpm format:check && pnpm test` (`lint` includes the CSS)
---- all green before any commit. CI runs the same via mise
+`pnpm lint` includes the CSS. CI runs the same checks via mise
 (`.github/workflows/ci.yml`).
 
 typescript stays on v6: astro is currently incompatible with typescript 7, and
